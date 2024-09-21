@@ -1,0 +1,769 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
+
+/* General styles */
+body {
+  background-color: #201f1f;
+  font-family: "Roboto", sans-serif, Tahoma, Verdana;
+}
+header,
+nav,
+main,
+aside,
+footer {
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #252525;
+}
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  color: white;
+  border-bottom: 3px solid #6d2a7b;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: start;
+  margin: 20px 25px;
+  width: 400px;
+}
+/* this is for nav */
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+nav ul li:hover {
+  font-weight: bolder;
+  font-size: 1.4rem;
+  background-color: #6d2a7b;
+}
+/* for biger screan port*/
+.menu-close,
+.menu-icon,
+input[type="checkbox"] {
+  display: none;
+}
+
+header .logo img {
+  width: 80px;
+}
+
+main {
+  margin-top: 200px;
+  width: 100%;
+}
+/* this is for main divition*/
+.container {
+  grid-template-columns: repeat(4, 2fr);
+  margin: 25px;
+  border-bottom: 1px solid #6d2a7b;
+}
+.container:nth-of-type(1) {
+  grid-area: 1/4;
+  border-bottom: 1px;
+}
+.container:nth-of-type(2) {
+  grid-area: 2/4;
+  margin: 20px;
+}
+.container:nth-of-type(3) {
+  grid-area: 3/4;
+  padding: 30px;
+}
+.container:nth-of-type(5) {
+  grid-area: 4/4;
+}
+
+main video {
+  width: 80%;
+  height: auto;
+  scrollbar-width: none;
+  border: 1px solid #201f1f;
+  padding: 0 20px;
+  top: 0;
+}
+/* this is for text animation*/
+
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  color: white;
+  width: 100%;
+  pointer-events: none;
+  text-align: center;
+  color: #6d2a7b;
+}
+
+.banner h1 {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.banner h2 {
+  opacity: 0;
+  position: absolute;
+  background-color: #ddd;
+  border-radius: 25px;
+  align-items: center;
+  padding: 10px;
+  font-size: 2rem;
+  animation: fadeInOut 9s infinite;
+}
+
+.banner h2:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.banner h2:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.banner h2:nth-child(3) {
+  animation-delay: 6s;
+}
+/* Animation to fade in and out */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*this for different activity */
+.read-more {
+  width: 60%;
+  height: auto;
+  scrollbar-width: none;
+  border: 1px solid #6d2a7b52;
+  border-radius: 25px;
+  padding: 30px;
+  position: relative;
+  left: 20%;
+}
+.read-more p {
+  color: #ddd;
+  text-align: justify;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 10px;
+}
+h2 {
+  text-align: center;
+  padding-left: 20px;
+}
+
+.group {
+  display: inline-block;
+  text-align: center;
+  margin: 40px;
+}
+
+.group img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+}
+.group img:hover {
+  opacity: 40%;
+}
+
+.group a {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.group a:hover {
+  color: #6d2a7b;
+}
+.exb img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
+  object-fit: cover;
+  border-style: groove;
+}
+.exb h3 {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 10px;
+}
+.exb h3:hover {
+  color: #6d2a7b;
+}
+/*ends here*/
+/*footer started here*/
+footer {
+  font-size: 14px;
+  padding: 30px;
+}
+
+footer a {
+  color: #ddd;
+  margin: 20px;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+/*footer ends here*/
+
+/* Style for h1 - aligned to the left and uppercase */
+h1 {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* this is for contact location and visitation time starting here*/
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  left: 30%;
+  transform: translateX(20%);
+  text-align: justify;
+  gap: 60px;
+  margin: 10px;
+}
+
+.location address {
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  top: 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+/*contact location and visitation time starting here*/
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 5px 0;
+}
+/*  slide show for a group start here */
+.slidebox {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  animation: alternate ease-in-out infinite;
+  box-shadow: 5px 7px 65px #ffbaeea6;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#s1:checked ~ .slides #slide1,
+#s2:checked ~ .slides #slide2,
+#s3:checked ~ .slides #slide3,
+#s4:checked ~ .slides #slide4 {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: -1;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #918e8e;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.3s;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.arrow:hover {
+  color: #6d2a7b;
+}
+/* slideshow ends here*/
+
+/*exhibition space*/
+
+.exhi-space {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0 20px;
+  color: #ddd;
+}
+
+.exhi-title {
+  background-color: #201f1f;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #6d2a7b;
+  flex-basis: 25%;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.exhi-title:hover {
+  transform: scale(1.05);
+}
+
+.exhi-space img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.exhi-space img:hover {
+  transform: scale(1.05);
+}
+
+.exhi-space h3 {
+  margin: 15px 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.exhi-space p {
+  text-align: left;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+/* Mobile styles */
+.cta {
+  display: inline-block;
+  background-color: #6d2a7b;
+  color: white;
+  font-size: 1.2rem;
+  width: 25%;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta:hover {
+  background-color: #0a0a0a;
+  transform: scale(1);
+}
+/* cta ends here*/
+
+/* this is for contact form */
+
+form {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 800px;
+  height: auto;
+  width: 100%;
+  background-color: #5c5a5a;
+  border-radius: 10px;
+}
+
+.form-title {
+  text-align: center;
+  margin: 30px;
+  font-size: 1.7rem;
+}
+legend {
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: 900;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+.tour-input {
+  display: inline-flex;
+  gap: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 0 20px;
+  padding: 20px;
+}
+
+.tour-input label {
+  flex: 1;
+  font-weight: 700;
+  text-align: left;
+}
+
+.tour-input input,
+.tour-input textarea {
+  flex: 2;
+  padding: 10px 30px 20px;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  align-items: self-start;
+}
+.textarea-note p {
+  font-size: 0.5em;
+  margin-top: 30px;
+}
+
+.tour-input input {
+  display: block;
+  color: #e27b1a;
+  background-color: #ddd;
+  border: 2px solid #ccc;
+}
+/* the form end here*/
+/* this is a class to control the h3 title*/
+.sub-title h2 {
+  text-align: left;
+  margin: 20px 0;
+
+  text-transform: capitalize;
+}
+.sub-title li {
+  list-style: lowerroman;
+  text-align: left;
+  margin: 20px;
+  font-size: 1.2rem;
+}
+/* class of sub-title ends there*/
+/* thi is for image for contrubition page*/
+
+.contribute {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.contribute img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* this is the end of contribution */
+
+/* this is for form auto-responses start here */
+
+.bg-img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("/images/library-1132573_1920.jpg") no-repeat center
+    center/cover;
+}
+.bg-img.img-2 {
+  background: url("/images/roberto-nickson-396152.jpg") no-repeat center
+    center/cover;
+}
+.bg-img h1,
+.bg-img p {
+  flex-wrap: nowrap;
+  top: 30%;
+  left: 20%;
+  transform: translate(10%, 80%);
+  max-width: 60%;
+  margin: 0 auto;
+
+  border-radius: 25px;
+  border: 1px solid #252525;
+  background-color: #252525c7;
+  height: auto;
+}
+.bg-img h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.bg-img p {
+  font-size: 1.2rem;
+  padding: 30px;
+}
+
+.doc img:hover {
+  transform: scale(2.05);
+}
+
+.doc label {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+/*form auto-responses end here*/
+
+/* here the style css for mobile start here*/
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 15px;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  .side-menu {
+    position: fixed;
+    left: -50%;
+    top: 13%;
+    width: 50%;
+    height: 100%;
+    background-color: #201f1f;
+    transition: left 0.3s ease;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .side-menu ul li {
+    margin: 20px 0;
+  }
+
+  /* Label for menu icon */
+  .menu-icon {
+    display: block;
+    position: fixed;
+    top: 12%;
+    left: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 7px;
+    color: #ffff;
+    z-index: 1000;
+  }
+
+  /* Label for exit icon */
+  .menu-close {
+    position: fixed;
+    top: 13%;
+    left: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid #6d2a7b;
+    padding: 7px;
+    color: white;
+    border-radius: 5px;
+    z-index: 1001;
+    display: none;
+  }
+
+  /* When the checkbox is checked, move the menu in and display the exit button */
+  input[type="checkbox"]:checked ~ .side-menu {
+    left: 0;
+  }
+
+  input[type="checkbox"]:checked ~ .menu-close {
+    display: block;
+  }
+
+  input[type="checkbox"]:checked ~ .menu-icon {
+    display: none;
+  }
+
+  /*this one if for video display and banner*/
+  main video {
+    width: 450px;
+    padding-right: 45px;
+  }
+  .banner {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+  }
+
+  .banner h1 {
+    font-size: 1rem;
+  }
+
+  .banner h2 {
+    font-size: 12px;
+    padding: 3px;
+  }
+
+  /* this is for cta in video display*/
+  .read-more {
+    width: 70%;
+  }
+  .read-more p {
+    font-size: 0.8rem;
+    padding: 2px;
+    margin: 5px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    left: 30%;
+    transform: translateX(20%);
+    text-align: justify;
+    gap: 60px;
+    margin: 50px;
+  }
+  footer {
+    font-size: 12px;
+  }
+  footer a {
+    font-size: 1em;
+    display: inline-block;
+  }
+  /* Group section on mobile */
+  .group img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .exhi-title {
+    flex-basis: 100%;
+    margin: 10px;
+  }
+
+  .exhi-space h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Adjusting footer */
+  footer {
+    font-size: 12px;
+    padding: 20px;
+  }
+
+  /* Form responsiveness */
+  form {
+    margin: 0 10px;
+    width: 90%;
+  }
+
+  .tour-input input,
+  .tour-input textarea {
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Adjusting navigation for smaller screens */
+  nav ul li {
+    font-size: 1rem;
+    margin: 0 20px;
+  }
+  h1 {
+    font-size: 1.5rem;
+    padding-top: 30px;
+  }
+  /* Main content adjustment */
+  main {
+    margin-top: 150px;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 15px;
+  }
+
+  /* Banner text adjustments */
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner h2 {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  /* Reduce read-more box padding */
+  .read-more {
+    width: 60%;
+    padding: 10px;
+  }
+
+  /* Reduce group image size */
+  .group img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .exhi-title {
+    flex-basis: 45%;
+  }
+
+  .exhi-space h3 {
+    font-size: 1rem;
+  }
+}

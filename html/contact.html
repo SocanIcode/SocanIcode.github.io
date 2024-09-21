@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experience the journey of science at our museum with 1,000+ interactive exhibits. Explore nature, space, and lifes building blocks in a hands-on environment designed to inspire curiosity for all ages."
+    />
+    <title>Community Science Museum|contact</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!--For Logo-->
+      <div class="logo">
+        <a href="/index.html">
+          <img
+            src="/images/open-science-735787.png"
+            alt="Community Science Museum"
+            id="logo"
+          />
+        </a>
+      </div>
+
+      <!-- Checkbox to toggle menu -->
+      <input type="checkbox" id="menuToggle" />
+
+      <!-- Label for checkbox to toggle menu -->
+      <label for="menuToggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <!-- Side menu -->
+      <nav class="side-menu">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/html/contact.html">Contact</a></li>
+          <li><a href="/html/contribution.html">Contribution</a></li>
+          <li><a href="/html/exhibition.html">Exhibitions</a></li>
+        </ul>
+      </nav>
+
+      <!-- Exit button for closing the menu -->
+      <label for="menuToggle" class="menu-close">
+        <i class="fa-solid fa-xmark"></i>
+      </label>
+    </header>
+    <!--nav ends here-->
+    <main>
+      <!--main start here-->
+      <section class="container">
+        <h1>Visit - Community Museum</h1>
+        <div class="info">
+          <div class="time">
+            <h3>Opening Hours</h3>
+            <ul>
+              <li>Monday:Closed</li>
+              <li>Tuesday 10:00 - 16:00</li>
+              <li>Thrusday 10:00 - 16:00</li>
+              <li>Friday: 10:00 - 16:00</li>
+              <li>Saturday: 9:00 - 16:00</li>
+              <li>Sunday: 9:00 - 16:00</li>
+            </ul>
+          </div>
+          <div class="location">
+            <h3>Location</h3>
+            <address>Community Museum</address>
+            <address>Stockholm 1 164 77</address>
+            <address>Sweden</address>
+          </div>
+        </div>
+        <div class="read-more">
+          <h3>Admission</h3>
+          <p>The entrance is <strong>Free</strong> for all.</p>
+          <p>
+            There are guided tours of the museum that leave every hour. These
+            tours are <strong>70 NOK</strong> per person and include a handy
+            printed guide of the museum.
+          </p>
+          <p>
+            If you would like to organise a guided tour for your group of 6 or
+            more people, please to arrange the tour.
+          </p>
+
+          <h3>Food and drink</h3>
+          <p>
+            There is a café attached to the museum where you can get light
+            lunches, soft drinks, coffee, snacks and more.
+          </p>
+
+          <h3>Shop</h3>
+          <p>
+            Our shop offers a range of memorabilia from the museum as well as
+            great gifts and activity packs that allow you to continue to explore
+            science even after you've left the museum.
+          </p>
+        </div>
+      </section>
+      <section class="container">
+        <h2 class="form-title">Community Museum - Tour Booking form</h2>
+
+        <div class="company-info">
+          <form action="">
+            <legend>Company Information</legend>
+            <!--the form input company start here-->
+            <div class="tour-input">
+              <label for="company">Company Name</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="XYZ AB"
+                required
+              />
+
+              <label for="email">Email </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="ex:myname@example.com"
+                required
+              />
+
+              <label for="phone">Phone</label>
+              <input
+                type="number"
+                id="phone"
+                name="phone"
+                placeholder="(0000) 000 000 000"
+                required
+              />
+            </div>
+
+            <div class="tour-input">
+              <label for="street">Street Addresses</label>
+              <input type="text" id="street" name="street" />
+
+              <label for="postal">Postal code</label>
+              <input type="number" id="postal" name="postal" />
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" required />
+            </div>
+
+            <!--the form input company end here-->
+
+            <legend>Tour group information</legend>
+            <!--the form input tour guide start here-->
+
+            <div class="tour-input">
+              <label for="group-type">Type of group</label>
+              <input
+                type="text"
+                id="group-type"
+                name="group-type"
+                placeholder="ex:school name"
+                required
+              />
+
+              <label for="datetime">Date of Arrival/Time</label>
+              <input
+                type="datetime-local"
+                id="datetime"
+                name="datetime"
+                required
+              />
+            </div>
+
+            <div class="tour-input">
+              <label for="guides-number">Number of tour guide(s)</label>
+              <input
+                type="number"
+                id="guides-number"
+                name="guides-number"
+                required
+              />
+
+              <label for="group-number">Number of tour group</label>
+              <input
+                type="number"
+                id="group-number"
+                name="group-number"
+                placeholder="ex:myname@example.com"
+                required
+              />
+            </div>
+
+            <div class="tour-input">
+              <label for="custom-tour">Create Customise Tour</label>
+              <textarea
+                id="custom-tour"
+                name="message"
+                rows="10"
+                cols="100"
+                maxlength="200"
+              ></textarea>
+            </div>
+            <p class="textarea-note">
+              Note: We provide tour guide for group 6 or more, for other
+              requirement please specify here.
+            </p>
+
+            <!--CTA button for tourguide form start here-->
+            <div class="cta">
+              <a href="/html/thank_you_our_guild_booking copy.html">Send</a>
+            </div>
+            <!--cta button ends here-->
+          </form>
+          <!--the form input tour guide end here-->
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer>
+    @community science museum
+    <span>|</span>
+    <a href="/html/document.html">Document </a>
+    <span>|</span>
+    <a href="/html/privacy_policy.html">privacy policy </a>
+    <span>|</span>
+
+    <a href="/html/terms_condition.html">terms condition</a>
+  </footer>
+</html>

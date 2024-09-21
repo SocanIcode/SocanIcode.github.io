@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thank you for booking with our tour service! We will contact you soon to confirm your details and answer any questions. We look forward to providing a memorable experience!"
+    />
+
+    <title>The Community Science Museum|thank you tour guiude booking</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!--For Logo-->
+      <div class="logo">
+        <a href="/index.html">
+          <img
+            src="/images/open-science-735787.png"
+            alt="Community Science Museum"
+            id="logo"
+          />
+        </a>
+      </div>
+
+      <!-- Checkbox to toggle menu -->
+      <input type="checkbox" id="menuToggle" />
+
+      <!-- Label for checkbox to toggle menu -->
+      <label for="menuToggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <!-- Side menu -->
+      <nav class="side-menu">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/html/contact.html">Contact</a></li>
+          <li><a href="/html/contribution.html">Contribution</a></li>
+          <li><a href="/html/exhibition.html">Exhibitions</a></li>
+        </ul>
+      </nav>
+
+      <!-- Exit button for closing the menu -->
+      <label for="menuToggle" class="menu-close">
+        <i class="fa-solid fa-xmark"></i>
+      </label>
+    </header>
+    <main>
+      <!--This form for application-->
+      <section>
+        <form>
+          <legend>Where do you want to get involved?</legend>
+          <div class="tour-input">
+            <input type="radio" id="support" name="support" value="text" />
+            <label for="support">Support</label>
+          </div>
+          <div class="tour-input">
+            <input
+              type="radio"
+              id="volunteer"
+              name="volunteer"
+              value="volunteer"
+            />
+
+            <label for="volunteer">volunteer</label>
+          </div>
+
+          <div class="tour-input">
+            <input
+              type="radio"
+              id="internship"
+              name="internship"
+              value="internship"
+            />
+            <label for="internship">internship</label>
+          </div>
+        </form>
+        <!--for personal information input start here-->
+        <form>
+          <legend>Personal Information</legend>
+
+          <div class="tour-input">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="John"
+              required
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="smith"
+              required
+            />
+            <label for="company">Company Name(Optional)</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="XYZ AB"
+              required
+            />
+
+            <label for="email">Email </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ex:myname@example.com"
+              required
+            />
+
+            <label for="phone">Phone</label>
+            <input
+              type="number"
+              id="phone"
+              name="phone"
+              placeholder="(0000) 000 000 000"
+              required
+            />
+          </div>
+
+          <div class="tour-input">
+            <label for="street">Street Addresses</label>
+            <input type="text" id="street" name="street" />
+
+            <label for="postal">Postal code</label>
+            <input type="number" id="postal" name="postal" />
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required />
+
+            <label for="files">upload File</label>
+            <input
+              type="file"
+              id="files"
+              name="files"
+              multiple
+              placeholder="upload"
+            />
+          </div>
+          <div class="tour-input">
+            <label for="text">Aditional</label>
+            <textarea name="message" rows="10" cols="70" maxlength="200">
+            </textarea>
+          </div>
+        </form>
+
+        <div class="cta">
+          <a href="thank_you_application.html">Sent</a>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer>
+    @community science museum
+    <span>|</span>
+    <a href="/html/document.html">Document </a>
+    <span>|</span>
+    <a href="/html/privacy_policy.html">privacy policy </a>
+    <span>|</span>
+
+    <a href="/html/terms_condition.html">terms condition</a>
+  </footer>
+</html>
