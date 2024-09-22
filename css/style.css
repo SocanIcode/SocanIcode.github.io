@@ -25,12 +25,24 @@ header {
   position: absolute;
   width: 100%;
   top: 0;
-  color: white;
   border-bottom: 1px solid #5c5a5a;
   margin: 0;
 }
 h1 {
+  text-align: left;
+  text-transform: capitalize;
   font-size: 2rem;
+  margin: 20px;
+  padding: 20px;
+}
+h2 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
 }
 a {
   color: white;
@@ -102,7 +114,7 @@ main {
 }
 
 main video {
-  width: 80%;
+  width: 80% auto;
   height: auto;
   scrollbar-width: none;
   border: 1px solid #201f1f;
@@ -176,24 +188,25 @@ main video {
   width: 60%;
   height: auto;
   scrollbar-width: none;
-  border: 1px solid #6d2a7b52;
+  border: 0.8px solid #918e8e88;
   border-radius: 25px;
   padding: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   position: relative;
   left: 20%;
 }
 .read-more p {
-  color: #ddd;
+  color: #fff;
   text-align: justify;
   justify-content: space-between;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 10px;
 }
-h2 {
-  text-align: center;
-  padding-left: 20px;
+.read-more h3 {
+  text-align: left;
+  font-size: 1.2rem;
 }
-
 .group {
   display: inline-block;
   text-align: center;
@@ -252,13 +265,6 @@ footer a {
 /*footer ends here*/
 
 /* Style for h1 - aligned to the left and uppercase */
-h1 {
-  text-align: left;
-  text-transform: capitalize;
-  font-size: 2rem;
-  margin: 20px;
-  padding: 20px;
-}
 
 /* this is for contact location and visitation time starting here*/
 
@@ -284,11 +290,6 @@ h1 {
   top: 0;
 }
 
-h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  text-align: left;
-}
 /*contact location and visitation time starting here*/
 
 ul {
@@ -365,6 +366,7 @@ input[type="radio"] {
 
 .exhi-space {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
@@ -375,12 +377,11 @@ input[type="radio"] {
 
 .exhi-title {
   background-color: #201f1f;
-  border-radius: 20px;
-  box-shadow: 2px 2px 5px #6d2a7b;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px #6d2a7b5b;
   flex-basis: 25%;
-  margin: 20px;
-  padding: 10px;
-  text-align: center;
+  margin: 15px;
+  text-align: justify;
   transition: transform 0.2s ease;
 }
 .exhi-title:hover {
@@ -392,20 +393,19 @@ input[type="radio"] {
   height: auto;
   border-radius: 10px;
 }
-.exhi-space img:hover {
-  transform: scale(1.05);
-}
 
 .exhi-space h3 {
-  margin: 15px 0;
-  font-size: 2rem;
-  text-transform: capitalize;
+  margin: 5px 0;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .exhi-space p {
   text-align: left;
+  line-height: 20px;
   font-size: 1rem;
-  padding-bottom: 20px;
+  padding: 10px;
+  color: #fff;
 }
 
 /* Mobile styles */
@@ -495,12 +495,15 @@ textarea {
   border: 2px solid #ccc;
 }
 /* the form end here*/
+
 /* this is a class to control the h3 title*/
 .sub-title h2 {
   text-align: left;
   margin: 20px 0;
-
   text-transform: capitalize;
+}
+.sub-title h3 {
+  font-size: 1.2rem;
 }
 .sub-title li {
   list-style: lowerroman;
@@ -528,43 +531,6 @@ textarea {
 }
 /* this is the end of contribution */
 
-/* this is for form auto-responses start here */
-
-.bg-img {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: url("/images/library-1132573_1920.jpg") no-repeat center
-    center/cover;
-}
-.bg-img.img-2 {
-  background: url("/images/roberto-nickson-396152.jpg") no-repeat center
-    center/cover;
-}
-.bg-img h1,
-.bg-img p {
-  flex-wrap: nowrap;
-  top: 30%;
-  left: 20%;
-  transform: translate(10%, 80%);
-  max-width: 60%;
-  margin: 0 auto;
-
-  border-radius: 25px;
-  border: 1px solid #252525;
-  background-color: #252525c7;
-  height: auto;
-}
-.bg-img h1 {
-  text-align: center;
-  font-weight: bolder;
-  font-size: 2rem;
-}
-.bg-img p {
-  font-size: 1.2rem;
-  padding: 30px;
-}
-
 .doc img:hover {
   transform: scale(2.05);
 }
@@ -577,10 +543,24 @@ textarea {
 /*form auto-responses end here*/
 
 /* here the style css for mobile start here*/
+
 @media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 12px;
+    letter-spacing: 0;
+    word-spacing: -3px;
+  }
   .container {
     grid-template-columns: repeat(1, 1fr);
-    margin: 15px;
   }
   input[type="checkbox"] {
     display: none;
@@ -630,7 +610,6 @@ textarea {
     display: none;
   }
 
-  /* When the checkbox is checked, move the menu in and display the exit button */
   input[type="checkbox"]:checked ~ .side-menu {
     left: 0;
   }
@@ -668,12 +647,12 @@ textarea {
   }
 
   .read-more {
-    width: 70%;
+    width: 100%;
   }
   .read-more p {
-    font-size: 0.8rem;
-    padding: 2px;
-    margin: 5px;
+    font-size: 1rem;
+    white-space: 10px;
+    margin: 0px;
   }
   .info {
     display: flex;
@@ -699,7 +678,7 @@ textarea {
   }
 
   .exhi-title {
-    flex-basis: 100%;
+    flex-basis: 40%;
     margin: 10px;
   }
 
@@ -707,6 +686,9 @@ textarea {
     font-size: 1.2rem;
   }
 
+  .exhi-space p {
+    text-align: justify;
+  }
   /* Adjusting footer */
   footer {
     font-size: 12px;
@@ -723,6 +705,9 @@ textarea {
   .tour-input textarea {
     padding: 8px 20px;
   }
+  legend {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -732,7 +717,7 @@ textarea {
     margin: 0 20px;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-top: 30px;
   }
   /* Main content adjustment */
