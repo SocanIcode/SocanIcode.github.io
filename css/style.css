@@ -7,9 +7,9 @@
 
 /* General styles */
 body {
-  background-color: #201f1f;
+  background-color: #f3eded;
   font-family: "Roboto", sans-serif, Tahoma, Verdana;
-  color: white;
+  color: #fff;
 }
 header,
 nav,
@@ -20,13 +20,13 @@ footer {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #252525;
+  background-color: #353434;
 }
 header {
   position: absolute;
   width: 100%;
   top: 0;
-  border-bottom: 1px solid #5c5a5a;
+  border-bottom: 1px solid#555353;
   margin: 0;
 }
 h1 {
@@ -75,7 +75,7 @@ nav ul li {
 nav ul li:hover {
   font-weight: bolder;
   font-size: 1.3rem;
-  background-color: #6d2a7b;
+  background-color: #bdb6af;
 }
 /* for */
 .menu-close,
@@ -223,9 +223,6 @@ main video {
   object-fit: cover;
   border: 3px solid #ccc;
 }
-.group img:hover {
-  opacity: 40%;
-}
 
 .group a {
   display: block;
@@ -235,7 +232,7 @@ main video {
 }
 
 .group a:hover {
-  color: #6d2a7b;
+  color: #d48e47;
 }
 .exb img {
   width: 250px;
@@ -379,7 +376,7 @@ input[type="radio"] {
 }
 
 .exhi-title {
-  background-color: #201f1f;
+  background-color: #242222;
   border-radius: 25px;
   box-shadow: 2px 2px 5px #6d2a7b5b;
   flex-basis: 25%;
