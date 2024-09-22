@@ -7,7 +7,7 @@
 
 /* General styles */
 body {
-  background-color: #1a1919;
+  background-color: #353434;
   font-family: "Roboto", sans-serif, Tahoma, Verdana;
   color: #fff;
 }
@@ -453,11 +453,6 @@ form {
   border-radius: 10px;
 }
 
-.form-title {
-  text-align: center;
-  margin: 30px;
-  font-size: 1.7rem;
-}
 legend {
   font-size: 1.5rem;
   text-align: left;
@@ -642,6 +637,9 @@ textarea {
     width: 450px;
     padding-right: 45px;
   }
+  .banner {
+    top: 35%;
+  }
 
   .banner h1 {
     font-size: 1em;
@@ -656,13 +654,14 @@ textarea {
     position: absolute;
     background-color: #ddd;
     font-size: 12px;
-    margin: -30px;
+    margin: -40px;
     padding: 15px;
     bottom: 0%;
   }
 
   .read-more {
     width: 100%;
+    text-align: start;
   }
   .read-more p {
     font-size: 1rem;
@@ -691,8 +690,11 @@ textarea {
     height: 150px;
   }
 
+  .exhi-space {
+    flex-direction: column;
+  }
   .exhi-title {
-    flex-basis: 40%;
+    flex-basis: 20%;
     margin: 10px;
   }
 
@@ -725,7 +727,6 @@ textarea {
 }
 
 @media (max-width: 1024px) {
-  /* Adjusting navigation for smaller screens */
   nav ul li {
     font-size: 1rem;
     margin: 0 20px;
