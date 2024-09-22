@@ -26,10 +26,12 @@ header {
   width: 100%;
   top: 0;
   color: white;
-  border-bottom: 3px solid #6d2a7b;
+  border-bottom: 1px solid #5c5a5a;
   margin: 0;
 }
-
+h1 {
+  font-size: 2rem;
+}
 a {
   color: white;
   text-decoration: none;
@@ -59,7 +61,7 @@ nav ul li {
 }
 nav ul li:hover {
   font-weight: bolder;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   background-color: #6d2a7b;
 }
 /* for biger screan port*/
@@ -74,14 +76,14 @@ header .logo img {
 }
 
 main {
-  margin-top: 200px;
+  margin-top: 10%;
   width: 100%;
 }
 /* this is for main divition*/
 .container {
   grid-template-columns: repeat(4, 2fr);
   margin: 25px;
-  border-bottom: 1px solid #6d2a7b;
+  border-bottom: 0.5px solid #5c5a5a;
 }
 .container:nth-of-type(1) {
   grid-area: 1/4;
@@ -112,27 +114,30 @@ main video {
 .banner {
   position: absolute;
   top: 50%;
-  left: 20%;
-  color: white;
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 40%;
   pointer-events: none;
   text-align: center;
-  color: #6d2a7b;
+  color: #e27b1a;
+  max-width: 400px auto;
+  height: auto;
+  background-color: #ddd;
+  box-sizing: content-box;
 }
 
 .banner h1 {
   font-weight: bolder;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .banner h2 {
   opacity: 0;
-  position: absolute;
-  background-color: #ddd;
-  border-radius: 25px;
-  align-items: center;
-  padding: 10px;
-  font-size: 2rem;
+  font-size: 1.3rem;
+  display: block;
+  align-content: center;
+  border-radius: 15px;
   animation: fadeInOut 9s infinite;
 }
 
@@ -584,7 +589,7 @@ textarea {
   .side-menu {
     position: fixed;
     left: -50%;
-    top: 13%;
+    top: 5%;
     width: 50%;
     height: 100%;
     background-color: #201f1f;
@@ -643,22 +648,25 @@ textarea {
     width: 450px;
     padding-right: 45px;
   }
-  .banner {
-    position: absolute;
-    top: 35%;
-    left: 15%;
-  }
 
   .banner h1 {
-    font-size: 1rem;
+    font-size: 1em;
+    margin: -70px 15px;
+    padding: 15px 10px;
+    background-color: #ddd;
+    border-radius: 10px;
   }
 
   .banner h2 {
+    display: flex;
+    position: absolute;
+    background-color: #ddd;
     font-size: 12px;
-    padding: 3px;
+    margin: -30px;
+    padding: 15px;
+    bottom: 0%;
   }
 
-  /* this is for cta in video display*/
   .read-more {
     width: 70%;
   }
@@ -738,14 +746,6 @@ textarea {
   }
 
   /* Banner text adjustments */
-  .banner h1 {
-    font-size: 1.5rem;
-  }
-
-  .banner h2 {
-    font-size: 1rem;
-    padding: 8px;
-  }
 
   /* Reduce read-more box padding */
   .read-more {
