@@ -1,20 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
 
 /* General styles */
 body {
   background-color: #201f1f;
   font-family: "Roboto", sans-serif, Tahoma, Verdana;
+  color: white;
 }
 header,
 nav,
 main,
 aside,
 footer {
-  color: white;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -76,7 +77,7 @@ nav ul li:hover {
   font-size: 1.3rem;
   background-color: #6d2a7b;
 }
-/* for biger screan port*/
+/* for */
 .menu-close,
 .menu-icon,
 input[type="checkbox"] {
@@ -85,6 +86,9 @@ input[type="checkbox"] {
 
 header .logo img {
   width: 80px;
+}
+footer {
+  border-top: 1px solid #918e8e;
 }
 
 main {
@@ -95,7 +99,6 @@ main {
 .container {
   grid-template-columns: repeat(4, 2fr);
   margin: 25px;
-  border-bottom: 0.5px solid #5c5a5a;
 }
 .container:nth-of-type(1) {
   grid-area: 1/4;
@@ -114,7 +117,7 @@ main {
 }
 
 main video {
-  width: 80% auto;
+  width: 80%;
   height: auto;
   scrollbar-width: none;
   border: 1px solid #201f1f;
@@ -132,7 +135,7 @@ main video {
   pointer-events: none;
   text-align: center;
   color: #e27b1a;
-  max-width: 400px auto;
+  max-width: 400px;
   height: auto;
   background-color: #ddd;
   box-sizing: content-box;
@@ -433,6 +436,15 @@ input[type="radio"] {
 /* cta ends here*/
 
 /* this is for contact form */
+fieldset {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 800px;
+  height: auto;
+  width: 100%;
+  background-color: #5c5a5a;
+  border-radius: 10px;
+}
 
 form {
   margin: 0 auto;
@@ -657,7 +669,6 @@ textarea {
   }
   .read-more p {
     font-size: 1rem;
-    white-space: 10px;
     margin: 0px;
   }
   .info {

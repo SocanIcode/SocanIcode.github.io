@@ -62,122 +62,124 @@
     </header>
     <main>
       <!--This form for application-->
-      <section>
-        <form>
-          <legend>Where do you want to get involved?</legend>
-          <div class="tour-input">
-            <input type="radio" id="support" name="support" value="text" />
-            <label for="support">Support</label>
-          </div>
-          <div class="tour-input">
-            <input
-              type="radio"
-              id="volunteer"
-              name="volunteer"
-              value="volunteer"
-            />
 
-            <label for="volunteer">volunteer</label>
-          </div>
+      <fieldset>
+        <legend>Where do you want to get involved?</legend>
+        <div class="tour-input">
+          <input type="radio" id="support" name="support" value="text" />
+          <label for="support">Support</label>
+        </div>
+        <div class="tour-input">
+          <input
+            type="radio"
+            id="volunteer"
+            name="volunteer"
+            value="volunteer"
+          />
 
-          <div class="tour-input">
-            <input
-              type="radio"
-              id="internship"
-              name="internship"
-              value="internship"
-            />
-            <label for="internship">internship</label>
-          </div>
-        </form>
-        <!--for personal information input start here-->
-        <form>
-          <legend>Personal Information</legend>
+          <label for="volunteer">volunteer</label>
+        </div>
 
-          <div class="tour-input">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              placeholder="John"
-              required
-            />
-            <label for="lname">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lname"
-              placeholder="smith"
-              required
-            />
-            <label for="company">Company Name(Optional)</label>
-            <input
-              type="text"
-              id="company"
-              name="company"
-              placeholder="XYZ AB"
-              required
-            />
+        <div class="tour-input">
+          <input
+            type="radio"
+            id="internship"
+            name="internship"
+            value="internship"
+          />
+          <label for="internship">internship</label>
+        </div>
+      </fieldset>
+      <!--for personal information input start here-->
+      <fieldset>
+        <legend>Personal Information</legend>
 
-            <label for="email">Email </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="ex:myname@example.com"
-              required
-            />
+        <div class="tour-input">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="John"
+            required
+          />
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="smith"
+            required
+          />
+          <label for="company">Company Name(Optional)</label>
+          <input
+            type="text"
+            id="company"
+            name="company"
+            placeholder="XYZ AB"
+            required
+          />
 
-            <label for="phone">Phone</label>
-            <input
-              type="number"
-              id="phone"
-              name="phone"
-              placeholder="(0000) 000 000 000"
-              required
-            />
-          </div>
+          <label for="email">Email </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ex:myname@example.com"
+            required
+          />
 
-          <div class="tour-input">
-            <label for="street">Street Addresses</label>
-            <input type="text" id="street" name="street" />
+          <label for="phone">Phone</label>
+          <input
+            type="number"
+            id="phone"
+            name="phone"
+            placeholder="(0000) 000 000 000"
+            required
+          />
+        </div>
 
-            <label for="postal">Postal code</label>
-            <input type="number" id="postal" name="postal" />
-            <label for="country">Country</label>
-            <input type="text" id="country" name="country" required />
+        <div class="tour-input">
+          <label for="street">Street Addresses</label>
+          <input type="text" id="street" name="street" />
 
-            <label for="files">upload File</label>
-            <input
-              type="file"
-              id="files"
-              name="files"
-              multiple
-              placeholder="upload"
-            />
-          </div>
-          <div class="tour-input">
-            <label for="text">Aditional</label>
-            <textarea name="message" rows="10" cols="70" maxlength="200">
-            </textarea>
-          </div>
-        </form>
+          <label for="postal">Postal code</label>
+          <input type="number" id="postal" name="postal" />
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" required />
+
+          <label for="files">upload File</label>
+          <input type="file" id="files" name="files" multiple />
+        </div>
+        <div class="tour-input">
+          <label for="text">Aditional</label>
+
+          <textarea
+            id="text"
+            name="message"
+            rows="10"
+            cols="70"
+            maxlength="200"
+          >
+          </textarea>
+        </div>
 
         <div class="cta">
           <a href="thank_you_application.html">Sent</a>
         </div>
-      </section>
+      </fieldset>
     </main>
-  </body>
-  <footer>
-    @community science museum
-    <span>|</span>
-    <a href="document.html">Document </a>
-    <span>|</span>
-    <a href="privacy_policy.html">privacy policy </a>
-    <span>|</span>
+    <!--this is for footer content-->
+    <footer>
+      © 2024 The Community Science Museum. All rights reserved.
 
-    <a href="terms_condition.html">terms and condition</a>
-  </footer>
+      <span>|</span>
+      <a href="document.html">Document </a>
+      <span>|</span>
+      <a href="privacy_policy.html">privacy policy </a>
+      <span>|</span>
+
+      <a href="terms_condition.html">terms and condition</a>
+    </footer>
+  </body>
 </html>
